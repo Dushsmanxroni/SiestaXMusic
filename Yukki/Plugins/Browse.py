@@ -52,4 +52,3 @@ async def refresh_browse(_, query):
     except:
         pass
 
-Ok
