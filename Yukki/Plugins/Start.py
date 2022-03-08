@@ -1,4 +1,3 @@
-from Yukki.Plugins.custom.start import start_menu_group
 import asyncio
 import random
 import time
@@ -79,11 +78,6 @@ async def welcome(_, message: Message):
         except:
             return
 
-
-@app.on_message(filters.command(["start", f"start@{BOT_USERNAME}", "help", f"help@{BOT_USERNAME}"]) & filters.group)
-@PermissionCheck
-async def useradd(_, message: Message):
-    await start_menu_group(message)
 
 
 @app.on_message(filters.command(["settings", f"settings@{BOT_USERNAME}"]) & filters.group)
